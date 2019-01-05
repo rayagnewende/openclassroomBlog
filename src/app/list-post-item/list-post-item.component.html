@@ -6,7 +6,7 @@
        <p class="text-left" ><strong> {{ title | uppercase }}</strong></p>
        <p class="text-right">{{ create | date:'short' }} </p>
       </div>
-      <div class="col-xs-12" style="margin-bottom:10px;">
+      <div class="col-xs-12" style="margin-bottom:10 px;">
         {{ content }}
       </div>
       <div class="col-xs-12">
@@ -16,6 +16,8 @@
 
         <button [ngClass]="{'btn btn-danger':true}"
                 (click)="addDontLoveIt()" >don't love it</button>
+
+        <button class="btn btn-danger" style="float:right;" (click)="onRemovePost()" >Supprimer</button>
       </div>
 
   </div>

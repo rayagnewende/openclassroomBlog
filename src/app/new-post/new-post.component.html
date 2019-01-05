@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <form [formGroup]="formPost" (ngSubmit)="onAddPost()">
+        <div class="list-group">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" id="title" formControlName="title">
+        </div>
+
+        <div class="list-group">
+            <label for="content">Content</label>
+            <textarea id="content" cols="5" rows="5" class="form-control" formControlName="content"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" [disabled]="formPost.invalid">Ajouter un Post</button>
+      </form>
+    </div>
+</div>
